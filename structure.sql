@@ -28,3 +28,19 @@ CREATE TABLE film_acteur (
     FOREIGN KEY (id_film) REFERENCES film(id_film),
     FOREIGN KEY (id_acteur) REFERENCES acteur(id_acteur)
 );
+
+CREATE TABLE genre (
+    id_genre INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE acteur (
+    id_acteur INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE studio (
+    id_studio INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(100) NOT NULL
+);
